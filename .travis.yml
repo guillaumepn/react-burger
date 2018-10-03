@@ -2,11 +2,17 @@ language: node_js
 node_js:
   - "node"
 sudo: enabled
+cache:
+  directories:
+    - node_modules
 env:
   - SURGE_LOGIN=guillaumepn@free.fr SURGE_TOKEN=1193b228de0429fa559076ba2cc9b5d3
 script:
   - npm run build
 deploy:
   provider: surge
+  skip_cleanup: true
   project: ./build/
-  domain: didactic-treatment.surge.sh
+  domain: http://square-connection.surge.sh
+on:
+  branch: master

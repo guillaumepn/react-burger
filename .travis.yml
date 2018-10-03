@@ -9,4 +9,4 @@ script:
 deploy:
   provider: surge
   project: ./build/
-  domain: guillaumepn-burger.surge.sh
+  domain: didactic-treatment.surge.sh

@@ -4,7 +4,9 @@ node_js:
 sudo: enabled
 env:
   - SURGE_LOGIN=guillaumepn@free.fr SURGE_TOKEN=1193b228de0429fa559076ba2cc9b5d3
+script:
+  - "yarn build"
 deploy:
   provider: surge
-  project: ./build
+  project: ./build/
   domain: guillaumepn-burger.surge.sh

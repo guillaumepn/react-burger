@@ -3,8 +3,7 @@ node_js:
   - "node"
 sudo: enabled
 env:
-  - SURGE_LOGIN=guillaumepn@free.fr
-  - SURGE_TOKEN=1193b228de0429fa559076ba2cc9b5d3
+  - SURGE_LOGIN=guillaumepn@free.fr SURGE_TOKEN=1193b228de0429fa559076ba2cc9b5d3
 deploy:
   provider: surge
   project: ./build/
